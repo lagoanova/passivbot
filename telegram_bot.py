@@ -31,7 +31,7 @@ class Telegram:
         self.loop = loop
         self.config = config
         self._chat_id = config['chat_id'] if config['chat_id'] != 'chat_id' else os.environ['CHAT_ID']
-        self._updater = Updater(token=config['token'] if config['token'] != 'token' else os.environ['TOKEN'] )
+        self._updater = Updater(token=config['token'] if config['token'] != 'token' else os.environ['TOKEN'])
         self.config_reload_ts = 0.0
         self.n_trades = 10
 
