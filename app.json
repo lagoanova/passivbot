@@ -33,6 +33,16 @@
     "SECRET": {
       "description": "API SECRET",
       "required": true
+    },
+    "CHAT_ID": {
+      "description": "Telegram CHAT_ID",
+      "required": true,
+      "value": "Get id https://t.me/raw_data_bot"
+    },
+    "TOKEN": {
+      "description": "Telegram TOKEN",
+      "required": true,
+      "value": "Create bot https://t.me/BotFather"
     }
   }
 }
