@@ -4,6 +4,8 @@
 
 :warning: **Use at own risk** :warning:
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lagoanova/passivbot/)
+
 ## Overview
 
 Passivbot is a cryptocurrency trading bot written in Python, intended to require minimal user intervention.  
