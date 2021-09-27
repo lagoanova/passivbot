@@ -1,13 +1,38 @@
- {
-    "name": "passivbot",
-    "description": "Trading bot running on Bybit and Binance Futures",
-    "logo": "https://github.com/enarjord/passivbot/raw/master/docs/images/logo.png",
-    "repository": "https://github.com/enarjord/passivbot",
-	"formation": {
+{
+  "name": "passivbot",
+  "description": "Trading bot running on Bybit and Binance Futures",
+  "logo": "https://github.com/enarjord/passivbot/raw/master/docs/images/logo.png",
+  "repository": "https://github.com/enarjord/passivbot",
+  "formation": {
     "worker": {
       "quantity": 1,
       "size": "free"
     }
-	},
-    "keywords": ["python", "binance","trading","trader","bot","market","maker","algo","crypto"]
- }
+  },
+  "keywords": [
+    "python",
+    "binance",
+    "trading",
+    "trader",
+    "bot",
+    "market",
+    "maker",
+    "algo",
+    "crypto"
+  ],
+  "env": {
+    "EXCHANGE": {
+      "description": "Exchange",
+      "required": true,
+      "value": "binance_01"
+    },
+    "KEY": {
+      "description": "API KEY",
+      "required": true
+    },
+    "SECRET": {
+      "description": "API SECRET",
+      "required": true
+    }
+  }
+}
