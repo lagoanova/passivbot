@@ -119,7 +119,7 @@ def make_get_filepath(filepath: str) -> str:
 
 def load_exchange_key_secret(user: str) -> (str, str, str):
     try:
-        keyfile = json.load(open('api-keys.json'))
+        keyfile = json.load(open('api-keys.example.json'))
         if user in keyfile:
             return keyfile[user]['exchange'] or os.environ['EXCHANGE'], keyfile[user]['key'] or os.environ['KEY'], keyfile[user]['secret'] or os.environ['SECRET']
         else:
