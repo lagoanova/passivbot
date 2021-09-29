@@ -30,7 +30,7 @@ class Telegram:
         self._bot = bot
         self.loop = loop
         self.config = config
-        self._chat_id = config['chat_id'] if 'chat_id' not in config['chat_id'] else os.environ['CHAT_ID']
+        self._chat_id = config['chat_id'] if not 'chat_id' == config['chat_id'] else os.environ['CHAT_ID']
         self._updater = Updater(token=config['token'] if 'token' not in config['token'] else os.environ['TOKEN'])
         self.config_reload_ts = 0.0
         self.n_trades = 10
