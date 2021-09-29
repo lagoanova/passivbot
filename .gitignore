@@ -349,5 +349,10 @@ historical_data/
 !live_configs/bybit_default.json
 live_configs/*
 
+update.sh
+master.zip
+
 # Reports
 reports/*
+passivbot-master/
+docs/
