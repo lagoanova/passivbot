@@ -121,9 +121,10 @@ def load_exchange_key_secret(user: str) -> (str, str, str):
     try:
         keyfile = json.load(open('api-keys.json'))
         if user in keyfile:
-            return keyfile[user]['exchange'] or os.environ['EXCHANGE'], \
-                keyfile[user]['key'] or os.environ['KEY'], \
-                keyfile[user]['secret'] or os.environ['SECRET']
+            if os.environ['EXCHANGE'] and os.environ['KEY'] and os.environ['SECRET']:
+                return os.environ['EXCHANGE'], os.environ['KEY'], os.environ['SECRET']
+            else:
+                return keyfile[user]['exchange'], keyfile[user]['key'], keyfile[user]['secret']
         else:
             print("Looks like the keys aren't configured yet, or you entered the wrong username!")
         raise Exception('API KeyFile Missing!')
