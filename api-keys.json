@@ -7,8 +7,8 @@
             "enabled": true,
             "notify_entry_fill": true,
             "notify_close_fill": true,
-            "token": "chat_id",
-            "chat_id": "token"
+            "token": "token",
+            "chat_id": "chat_id"
         }
     },
     "binance_02": {
